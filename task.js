@@ -4,18 +4,23 @@ const TaskExport = function(){
 
     //returns a task object, similar to pizza
     function createTask(v,t){
-        
+        return{
+        time:t,
+        value:v
+      };
     }
-
     //returns a random integer between 0 and n inclusive
     function rInt(n){
-
+      return Math.round(n * Math.random());
     }
     //returns a list of task objects.
     //You must reference the function above to create them each time
     //make all times range from 0 to 15 and all values range from 0 to 100
     function Factory(n){
-
+      let tasks = [];
+      for(let a = 0; a > tasks.length; a++){
+      tasks.push new task(rInt(15), rInt(100));
+      }
     }
 
     //do not change anything below there!
