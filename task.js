@@ -18,9 +18,11 @@ const TaskExport = function(){
     //make all times range from 0 to 15 and all values range from 0 to 100
     function Factory(n){
       let tasks = [];
-      for(let a = 0; a > tasks.length; a++){
-      tasks.push new task(rInt(15), rInt(100));
+      for(let a = 0; a<n; a++){
+        let t = createTask(rInt(15),rInt(100));
+        tasks[a]=t;
       }
+      return tasks;
     }
 
     //do not change anything below there!
